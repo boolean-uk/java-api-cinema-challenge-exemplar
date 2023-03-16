@@ -1,0 +1,16 @@
+server:
+  port: 4000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://YOUR_DATABASE_URL/YOUR_DATABASE_NAME
+    username: YOUR_DATABASE_USERNAME
+    password: YOUR_DATABASE_PASSWORD
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
